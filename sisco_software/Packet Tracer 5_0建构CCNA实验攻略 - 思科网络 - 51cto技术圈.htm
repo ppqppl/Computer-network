@@ -1,0 +1,1064 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0029)http://g.51cto.com/skwl/34224 -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Packet Tracer 5.0建构CCNA实验攻略 - 思科网络 - 51cto技术圈</TITLE>
+<META http-equiv=Content-Type content="text/html;&#9;charset=gb2312">
+<META content=网络技术学院 name=description>
+<META content=,思科网络 name=keywords>
+<META http-equiv=Cache-Control content=private>
+<SCRIPT language=JavaScript 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/mingpian.js"></SCRIPT>
+
+<SCRIPT 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/def.js"></SCRIPT>
+
+<SCRIPT language=javascript 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/message.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/base2.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/dialog_utf8.js" 
+type=text/javascript></SCRIPT>
+<LINK href="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/6.css" 
+type=text/css rel=stylesheet><LINK 
+href="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/header_master_top.css" 
+type=text/css rel=stylesheet>
+<SCRIPT 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/poptop.js"></SCRIPT>
+
+<SCRIPT>
+var myid = "2685944";
+function sendmessage(){
+	var refurlk = "http://g.51cto.com/skwl";	
+	if(myid){
+		return true;
+	}else{
+		commentSubmit("",refurlk);
+		return false;
+	}
+}
+function copylink(ourl){
+	if(!ourl){
+		var clipBoardContent = "http://g.51cto.com/skwl";
+	}else{
+		var clipBoardContent = ourl;
+	}
+	window.clipboardData.setData("Text",clipBoardContent);
+	alert("复制成功!");
+	return false;
+}
+</SCRIPT>
+
+<STYLE type=text/css>#layout_0 {
+	FLOAT: left; WIDTH: 68%
+}
+#layout_1 {
+	FLOAT: left; WIDTH: 28%
+}
+#layout_2 {
+	FLOAT: left; WIDTH: 0%
+}
+</STYLE>
+<!--[if IE 6]>
+<STYLE type=text/css>#fixed {
+	RIGHT: 17px; POSITION: absolute
+}
+.fixed2 {
+	BORDER-RIGHT: #58b0dd 1px solid; BORDER-TOP: #58b0dd 1px solid; LEFT: 20%; BORDER-LEFT: #58b0dd 1px solid; WIDTH: 180px; BORDER-BOTTOM: #58b0dd 1px solid; POSITION: absolute; ; TOP: expression(eval(document.documentElement.scrollTop+100)); BACKGROUND-COLOR: #fff
+}
+</STYLE>
+<![endif]-->
+<META content="MSHTML 6.00.2900.6082" name=GENERATOR></HEAD>
+<BODY>
+<DIV id=append_parent></DIV>
+<DIV id=home_top>
+<DIV class=top_nav style="WIDTH: 990px">
+<DIV class=left><A href="http://g.51cto.com/"><IMG 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/head_group_sibebar_logo.gif" 
+align=absMiddle></A><A href="http://www.51cto.com/" 
+target=_blank>51CTO首页</A><IMG style="PADDING-TOP: 2px" height=25 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/top_bg_xian.gif" 
+width=16 align=absMiddle><A href="http://2695944.blog.51cto.com/mygroup.php" 
+target=_blank>我的圈子</A><IMG height=25 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/top_bg_xian.gif" 
+width=16 align=absMiddle><A href="http://g.51cto.com/grouptag.php" 
+target=_blank>搜索</A><IMG height=25 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/top_bg_xian.gif" 
+width=16 align=absMiddle><A href="http://51ctoblog.blog.51cto.com/26414/58749" 
+target=_blank>帮助</A></DIV>
+<DIV class=right>
+<DIV class=more><IMG height=16 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/top_shequ.gif" width=27 
+align=absMiddle>社区：<A href="http://bbs.51cto.com/" target=_blank>论坛</A><A 
+href="http://blog.51cto.com/" target=_blank>博客</A><A 
+href="http://down.51cto.com/" target=_blank>下载</A><A 
+href="http://book.51cto.com/" target=_blank>读书</A><A onmouseover=show(3,this) 
+onmouseout=popupClose() href="javascript:viod(0);">更多<IMG 
+style="PADDING-LEFT: 4px" 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/nav_ico1.gif" 
+align=absMiddle></A> </DIV><SPAN id=login_status>
+<DIV class=login id=login_status></DIV></SPAN></DIV></DIV></DIV>
+<DIV class=subMenu3 id=s3 onmouseover=popupNoClose() onmouseout=popupClose()>
+<UL>
+  <LI><A href="http://home.51cto.com/" target=_blank>家园</A> 
+  <LI><A href="http://blog.51cto.com/" target=_blank>博客</A> 
+  <LI><A href="http://bbs.51cto.com/" target=_blank>论坛</A> 
+  <LI><A href="http://down.51cto.com/" target=_blank>下载</A> 
+  <LI><A href="http://selftest.51cto.com/" target=_blank>自测</A> 
+  <LI><A href="http://doctor.51cto.com/" target=_blank>门诊</A> 
+  <LI><A href="http://blog.51cto.com/newsletter/" target=_blank>周刊</A> 
+  <LI><A href="http://book.51cto.com/" target=_blank>读书</A> 
+  <LI><A href="http://g.51cto.com/" target=_blank>技术圈</A> 
+  <LI><A href="http://zhidao.51cto.com/" target=_blank>知道</A> </LI></UL></DIV>
+<DIV class=fixed2 id=add_sys_type_div style="DISPLAY: none"></DIV>
+<DIV id=wrapper>
+<DIV id=innerWrapper>
+<DIV id=topPadding></DIV>
+<DIV id=header>
+<DIV id=innerHeader>
+<DIV>
+<H1 id=blogTitle><A href="http://g.51cto.com/skwl">思科网络</A></H1></DIV>
+<DIV id=blogDesc><A href="http://g.51cto.com/skwl">http://g.51cto.com/skwl</A> 
+&gt; <A onclick="return copylink()" 
+href="http://g.51cto.com/skwl">复制链接</A>&nbsp; <A 
+href="http://g.51cto.com/group_index.php?do=joingroup&amp;gname=skwl">加入本圈</A> 
+</DIV>
+<DIV class=top_bottom_left></DIV>
+<DIV class=clear></DIV></DIV></DIV><!-- add by cao2xi 2008-11-20 -->
+<DIV class=wd id=my_menu style="DISPLAY: none">
+<DIV class=wd1>
+<DIV class=wd_tit>
+<DIV class=wd_l><A href="http://www.51cto.com/" target=_blank>首页</A> | <A 
+href="http://down.51cto.com/" target=_blank>下载</A> | <A 
+href="http://bbs.51cto.com/" target=_blank>技术论坛</A> | <A 
+onclick="pmwin('open','1')" href="javascript:void(0)">短消息</A></DIV>
+<DIV class=wd_r><IMG onclick="dis_menu();return false" height=14 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/wd_gb.gif" width=15 
+border=0></DIV></DIV>
+<DIV class=wd_list>
+<DIV class=wd_list_l>
+<DIV class=wd_list_t><A href="http://blog.51cto.com/" target=_blank>博 
+客</A></DIV>
+<DIV class=wd_list_li>
+<UL>
+  <LI><A href="http://2695944.blog.51cto.com/" target=_blank>我的博客</A> 
+  <LI><A href="http://2695944.blog.51cto.com/addblog.php" target=_blank>发表文章</A> 
+
+  <LI><A href="http://blog.51cto.com/user_index.php" target=_blank>管理博客</A> 
+</LI></UL></DIV></DIV>
+<DIV class=wd_list_m>
+<DIV class=wd_list_t1><A href="http://g.51cto.com/" target=_blank>技术圈</A></DIV>
+<DIV class=wd_list_li>
+<UL>
+  <LI><A href="http://blog.51cto.com/user_index.php?action=creategroup" 
+  target=_blank>创建圈子</A> 
+  <LI><A href="http://2695944.blog.51cto.com/mygroup.php" target=_blank>我的圈子</A> 
+
+  <LI><A href="http://g.51cto.com/grouptag.php" target=_blank>寻找圈子</A> 
+</LI></UL></DIV></DIV>
+<DIV class=wd_list_r>
+<DIV class=wd_list_t><A href="http://2695944.blog.51cto.com/pic" target=_blank>相 
+册</A></DIV>
+<DIV class=wd_list_li>
+<UL>
+  <LI><A href="http://2695944.blog.51cto.com/pic" target=_blank>我的相册</A> 
+  <LI><A href="http://2695944.blog.51cto.com/pic/uploadphoto.php" 
+  target=_blank>上传图片</A> 
+  <LI><A href="http://2695944.blog.51cto.com/pic/manage_album.php?uid=" 
+  target=_blank>管理相册</A> </LI></UL></DIV></DIV></DIV></DIV></DIV><!-- add end -->
+<DIV id=mainWrapper>
+<DIV id=innerMainWrapper><!--
+-->
+<SCRIPT language=JavaScript 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/alert.js"></SCRIPT>
+
+<SCRIPT language=JavaScript type=text/javascript>
+
+  function dfa(uid,gid){
+
+     var url = "http://g.51cto.com/mingpian.php?uid="+uid+"&gid="+gid;
+	 postRequesttwo(url);
+	 return false;
+
+  }
+
+   function postRequesttwo(strURL){
+		var xmlHttp;
+		if(window.XMLHttpRequest){
+			var xmlHttp = new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject){
+			var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlHttp.open('GET', strURL, true);
+		xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xmlHttp.onreadystatechange = function(){
+			if (xmlHttp.readyState == 4 ){
+
+				updatepagetwo(xmlHttp.responseText);
+
+			}
+		}
+		xmlHttp.send(null);
+	}
+
+ function updatepagetwo(str){
+  //document.getElementById("add_sys_type_div").style.top=document.documentElement.scrollTop+100;
+document.getElementById("add_sys_type_div").innerHTML=str;
+document.getElementById("add_sys_type_div").style.display="";
+  }
+function thissubmit(){
+   var bgObj;
+   var title;
+   var msgObj;
+  bgObj=document.getElementById("bgDiv");
+  msgObj=document.getElementById("msgDiv");
+  title=document.getElementById("msgTitle");
+  document.body.removeChild(bgObj);
+		document.getElementById("msgDiv").removeChild(title);
+		document.body.removeChild(msgObj);
+}
+
+ function setart(actions,ssid,shenfenid,gid,uuid){
+     var url = "http://g.51cto.com/doaction.php?actions="+actions+"&sid="+ssid+"&shenfenid="+shenfenid+"&gid="+gid+"&uuid="+uuid ;
+
+	 postRequest(url);
+	 return false;
+ }
+
+ function postRequest(strURL){
+		var xmlHttp;
+		if(window.XMLHttpRequest){
+			var xmlHttp = new XMLHttpRequest();
+		}
+		else if(window.ActiveXObject){
+			var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlHttp.open('GET', strURL, true);
+		xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+		xmlHttp.onreadystatechange = function(){
+			if (xmlHttp.readyState == 4 ){
+
+				updatepage(xmlHttp.responseText);
+
+			}
+		}
+		xmlHttp.send(null);
+	}
+
+ function updatepage(str){
+		var array = new Array();
+		var sid;
+		var gid;
+		var shenfenid;
+		var uuid;
+		array = str.split("*");
+		sid=array[1];
+		shenfenid=array[2];
+		gid=array[3];
+		uuid=array[4];
+
+		if(array[5]=="commend"){
+		  alert("成功把该贴加为精华!");
+		  document.getElementById("jinhua").innerHTML="<a  href='#' onclick=\"javascript:setart('nocommend',"+sid+","+shenfenid+","+gid+","+uuid+");return false;\">取消精华</a>";
+		}
+		if(array[5]=="nocommend"){
+		  alert("成功把该贴取消精华!");
+		  document.getElementById("jinhua").innerHTML="<a href='#' onclick=\"javascript:setart('commend',"+sid+","+shenfenid+","+gid+","+uuid+");return false;\">加为精华</a>";
+		}
+		if(array[5]=="top"){
+		  alert("成功把该贴置顶");
+		  document.getElementById("zhiding").innerHTML="<a href='#' onclick=\"javascript:setart('notop',"+sid+","+shenfenid+","+gid+","+uuid+");return false;\">取消置顶</a>";
+		}
+		if(array[5]=="notop"){
+		  alert("成功取消该贴置顶!");
+		  document.getElementById("zhiding").innerHTML="<a href='#' onclick=\"javascript:setart('top',"+sid+","+shenfenid+","+gid+","+uuid+");return false;\">置顶</a>";
+		}
+
+  }
+</SCRIPT>
+<!--  <div id="add_sys_type_div" style="width:180px;border:1px #58B0DD solid; background-color:#FFF; position:absolute;left:20%;display:none; ">
+  </div> -->
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD></TD>
+    <TD class=t_zhanshi vAlign=bottom width=488>
+      <TABLE cellSpacing=0 cellPadding=0 border=0>
+        <TBODY>
+        <TR>
+          <TD width=10>&nbsp;</TD>
+          <TD class=font3><A class=fa 
+            href="http://blog.51cto.com/">51CTO博客</A> &gt; <A class=fa 
+            href="http://g.51cto.com/">技术圈</A> &gt; <A class=fa 
+            href="http://g.51cto.com/skwl">思科网络</A> &gt; <A class=fa 
+            href="http://g.51cto.com/skwl/forum-1.html">讨论区</A></TD></TR>
+        <TR>
+          <TD colSpan=2 height=2></TD></TR></TBODY></TABLE></TD>
+    <TD class=t_zhanshi vAlign=bottom width=488>
+      <TABLE cellSpacing=0 cellPadding=0 width=320 align=right border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=bottom align=right><IMG style="CURSOR: hand" 
+            onclick="sAlert('您还不是思科网络的成员，您不能发表主题<br> <input name=btn1 type=button value=确定    onclick=javascript:thissubmit();>',300,100,'#333399','#99FFCC');" 
+            height=29 
+            src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/New_t.gif" 
+            width=96 border=0> <IMG style="CURSOR: hand" 
+            onclick="window.location.href='http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply#re';" 
+            height=29 
+            src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/hui_t.gif" 
+            width=96 border=0> <IMG style="CURSOR: hand" 
+            onclick="window.location.href='http://g.51cto.com/group_index.php?do=joingroup&amp;gname=skwl';" 
+            height=29 
+            src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/jiaru.gif" 
+            width=96 border=0>&nbsp;</TD></TR>
+        <TR>
+          <TD height=3></TD></TR></TBODY></TABLE></TD>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 width=150><A class=fhhh 
+                        onmouseover="javascript:dfa(772647,1219);return false;" 
+                        style="FONT-WEIGHT: bold" 
+                        href="javascript:void(0)">fldong<IMG 
+                        src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/arrow_down.gif"></A></TD>
+                      <TD>[楼主]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili 
+                  onclick=javascript:dfa(772647,1219) 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/facegroup.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22><FONT color=#e70000>圈主</FONT></TD></TR>
+              <TR>
+                <TD height=22>圈积分：<SPAN class=font6>200</SPAN></TD></TR>
+              <TR>
+                <TD height=22><A class=fb 
+                  href="http://home.51cto.com/index.php?s=/Notify/write/uid/772647" 
+                  target=_blank>发短消息</A> <A class=fb 
+                  href="http://home.51cto.com/index.php?s=/space/772647" 
+                  target=_blank>去家园 加好友</A> <A class=fb 
+                  href="http://fldong.blog.51cto.com/" target=_blank>博客</A> 
+              </TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30><SPAN class=font5>Packet 
+                  Tracer 5.0建构CCNA实验攻略</SPAN>&nbsp;&nbsp;<SPAN>回复：5 
+                  阅读：2261</SPAN> </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2009-06-19 
+                  23:30:08 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <SCRIPT type=text/javascript>
+    var favor_url = 'http://'+ "g.51cto.com" + "/skwl/34224";
+    var favor_title = "Packet Tracer 5.0建构CCNA实验攻略";
+    var favor_fuid = "772647";
+</SCRIPT>
+
+              <SCRIPT 
+              src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/favorbox.js" 
+              type=text/javascript></SCRIPT>
+
+              <TR>
+                <TD align=right colSpan=2><A title=一键收藏，随时查看，分享好友！ 
+                  href="javascript:favorBox('open');"><IMG alt=一键收藏，随时查看，分享好友！ 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/favorite_add.gif" 
+                  border=0></A></TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>
+                  <DIV>Packet Tracer 5.0建构CCNA实验攻略目录：</DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV>
+                  <DIV><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/49bb1d55603600ccb745aea7.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(1)——配置Cisco交换机</A></DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/e5e8923585ed0c1990ef39a7.html" 
+                  target=_blank>Packet Tracer 5.0建构CCNA实验攻略(2)——配置VLAN</A></DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/c789868fa7dde3f2513d92a0.html" 
+                  target=_blank>Packet Tracer 5.0建构CCNA实验攻略(3)——Cisco 
+                  VTP</A></DIV>
+                  <DIV>&nbsp;</DIV>
+                  <DIV><FONT size=5><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/0998a41b526013118618bfa1.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(4)——STP生成树协议</A></FONT></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/fd9b658bd822521ac8fc7aa1.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(5)——WLAN</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/b5bff2dd86227be776c638a2.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(6)——配置单个的路由器</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/bcde83ee9d2ad1212df534ac.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(7)——配置静态路由</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/61b7319752d8d66555fb96ad.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(8)——配置动态路由RIP</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/065b382ee20470584fc226ab.html" 
+                  target=_blank>Packet Tracer 5.0建构CCNA实验攻略(9)——Cisoc 
+                  EIGRP</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/910190d6c943752707088bb4.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(10)——配置单区域OSPF</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/a9afab312f5ddfa05edf0eb4.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(11)——路由器实现Vlan间通信</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/a464e71f5417c6fde0fe0bb5.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(12)——PPP</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/5be9e1244b5fe73b8744f9b6.html" 
+                  target=_blank>Packet Tracer 5.0建构CCNA实验攻略(13)——帧中继Frame 
+                  Relay</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/0570f1cdc7b675590fb345b6.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(14)——PAT(基于端口的NAT)</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV></DIV>
+                  <DIV></DIV>
+                  <DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/779aae1269bc28c6c3fd78b7.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(15)——ACL简单的配置</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/6b3fdeea258fdddbd539c9b0.html" 
+                  target=_blank>Packet Tracer 5.0建构CCNA实验攻略(16)——DHCP 
+                  中继配置</A></FONT></DIV>
+                  <DIV><FONT size=2></FONT>&nbsp;</DIV>
+                  <DIV><FONT size=2><A 
+                  href="http://hi.baidu.com/sharedata/blog/item/7a1ae103adcc427f3912bbb1.html" 
+                  target=_blank>Packet Tracer 
+                  5.0建构CCNA实验攻略(17)——终结篇</A></FONT></DIV></DIV></TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429>2009-06-28 09:33:11 圈主 <A class=fhhh 
+                  href="http://fldong.blog.51cto.com/">fldong</A> 取消置顶</TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=34224#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 width=150><A class=fhhh 
+                        onmouseover="javascript:dfa(772647,1219);return false;" 
+                        style="FONT-WEIGHT: bold" 
+                        href="javascript:void(0)">fldong<IMG 
+                        src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/arrow_down.gif"></A></TD>
+                      <TD>[1楼]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili 
+                  onclick=javascript:dfa(772647,1219) 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/facegroup.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22><FONT color=#e70000>圈主</FONT></TD></TR>
+              <TR>
+                <TD height=22>圈积分：<SPAN class=font6>200</SPAN></TD></TR>
+              <TR>
+                <TD height=22><A class=fb 
+                  href="http://home.51cto.com/index.php?s=/Notify/write/uid/772647" 
+                  target=_blank>发短消息</A> <A class=fb 
+                  href="http://home.51cto.com/index.php?s=/space/772647" 
+                  target=_blank>去家园 加好友</A> <A class=fb 
+                  href="http://fldong.blog.51cto.com/" target=_blank>博客</A> 
+              </TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30>RE：Packet Tracer 
+                  5.0建构CCNA实验攻略 </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2009-06-19 
+                  23:31:55 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>网上的好东西太多了，我那几个实验都太老了，那天都做完一起贴上，做点好的案例实验。 </TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429><A class=fhhh 
+                  href="http://.blog.51cto.com/"></A></TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=34225#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 width=150><A class=fhhh 
+                        onmouseover="javascript:dfa(800907,1219);return false;" 
+                        style="FONT-WEIGHT: bold" 
+                        href="javascript:void(0)">志端<IMG 
+                        src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/arrow_down.gif"></A></TD>
+                      <TD>[2楼]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili 
+                  onclick=javascript:dfa(800907,1219) 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/800907_1243562463.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22><FONT color=#29a500>普通圈友</FONT></TD></TR>
+              <TR>
+                <TD height=22>圈积分：<SPAN class=font6>4</SPAN></TD></TR>
+              <TR>
+                <TD height=22><A class=fb 
+                  href="http://home.51cto.com/index.php?s=/Notify/write/uid/800907" 
+                  target=_blank>发短消息</A> <A class=fb 
+                  href="http://home.51cto.com/index.php?s=/space/800907" 
+                  target=_blank>去家园 加好友</A> <A class=fb 
+                  href="http://zhiduan.blog.51cto.com/" target=_blank>博客</A> 
+              </TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30>RE：Packet Tracer 
+                  5.0建构CCNA实验攻略 </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2009-06-20 
+                  20:49:29 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>看看了 </TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429><A class=fhhh 
+                  href="http://.blog.51cto.com/"></A></TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=34309#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 width=150><A class=fhhh 
+                        onmouseover="javascript:dfa(336222,1219);return false;" 
+                        style="FONT-WEIGHT: bold" 
+                        href="javascript:void(0)">123sjb123<IMG 
+                        src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/arrow_down.gif"></A></TD>
+                      <TD>[3楼]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili 
+                  onclick=javascript:dfa(336222,1219) 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/facegroup.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22><FONT color=#29a500>普通圈友</FONT></TD></TR>
+              <TR>
+                <TD height=22>圈积分：<SPAN class=font6>1</SPAN></TD></TR>
+              <TR>
+                <TD height=22><A class=fb 
+                  href="http://home.51cto.com/index.php?s=/Notify/write/uid/336222" 
+                  target=_blank>发短消息</A> <A class=fb 
+                  href="http://home.51cto.com/index.php?s=/space/336222" 
+                  target=_blank>去家园 加好友</A> <A class=fb 
+                  href="http://iceeye.blog.51cto.com/" target=_blank>博客</A> 
+              </TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30>RE：Packet Tracer 
+                  5.0建构CCNA实验攻略 </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2009-06-22 
+                  14:28:15 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>
+                  <DIV>不错,谢谢共享啊</DIV></TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429><A class=fhhh 
+                  href="http://.blog.51cto.com/"></A></TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=34542#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 
+                      width=150>[51CTO网友]zhanshen1008@126.com</TD>
+                      <TD>[4楼]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili height=98 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/facegroup.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22>非登录用户</TD></TR>
+              <TR>
+                <TD height=22></TD></TR>
+              <TR>
+                <TD height=22></TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30>RE：Packet Tracer 
+                  5.0建构CCNA实验攻略 </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2009-12-12 
+                  23:13:51 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>
+                  <DIV>谢谢了 ，哥们！！！</DIV></TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429><A class=fhhh 
+                  href="http://.blog.51cto.com/"></A></TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=75116#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=209 bgColor=#f5f5f5 rowSpan=2>
+            <TABLE cellSpacing=0 cellPadding=0 width=197 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom height=30>
+                  <TABLE cellSpacing=0 cellPadding=0 width=200 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD class=font4 width=150>[51CTO网友]好</TD>
+                      <TD>[5楼]</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 height=1></TD></TR>
+              <TR>
+                <TD height=15>&nbsp;</TD></TR>
+              <TR>
+                <TD align=middle><IMG class=user_icon_bili height=98 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/facegroup.jpg"> 
+                </TD></TR>
+              <TR>
+                <TD height=10>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE cellSpacing=0 cellPadding=0 width=170 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD height=22>非登录用户</TD></TR>
+              <TR>
+                <TD height=22></TD></TR>
+              <TR>
+                <TD height=22></TD></TR>
+              <TR>
+                <TD height=10></TD></TR></TBODY></TABLE></TD>
+          <TD vAlign=top width=764 height=200>
+            <TABLE cellSpacing=0 cellPadding=0 width=740 align=center 
+              border=0><TBODY>
+              <TR>
+                <TD vAlign=bottom width=606 height=30>RE：Packet Tracer 
+                  5.0建构CCNA实验攻略 </TD>
+                <TD class=font7 vAlign=bottom align=right width=140>2010-05-10 
+                  11:03:50 </TD></TR>
+              <TR>
+                <TD bgColor=#c2c2c2 colSpan=2 height=1></TD></TR>
+              <TR>
+                <TD style="LINE-HEIGHT: 5px" colSpan=2>&nbsp;</TD></TR>
+              <TR class=font8>
+                <TD 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px" 
+                colSpan=2>太谢谢你了 </TD></TR>
+              <TR>
+                <TD colSpan=2>&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=bottom bgColor=#f5f5f5 height=26>
+            <TABLE height=25 cellSpacing=0 cellPadding=0 width=683 align=right 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD class=font7 width=429><A class=fhhh 
+                  href="http://.blog.51cto.com/"></A></TD>
+                <TD class=font7 align=right width=254><A class=fhhh 
+                  href="http://g.51cto.com/group_index.php?do=bbsart&amp;sid=34224&amp;gname=skwl&amp;actionsp=reply&amp;qote=85744#re">引用回复</A></TD></TR>
+              <TR>
+                <TD colSpan=2 
+    height=5></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD height=5></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#e0e0e0 
+border=0>
+  <TBODY>
+  <TR>
+    <TD style="PADDING-RIGHT: 20px; PADDING-TOP: 4px" align=right 
+    bgColor=#fbfbfb height=28></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=978 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=fa>提醒：您还不是<A href="http://g.51cto.com/skwl" 
+      target=_blank><U>思科网络</U></A>的成员，您可以回复，但不能发表新帖。现在<A 
+      href="http://g.51cto.com/group_index.php?do=joingroup&amp;gname=skwl" 
+      target=_blank><U>加入本圈</U></A>与圈友无界沟通。</TD></TR></TBODY></TABLE><A name=#re></A>
+<FORM id=form1 name=form1 onsubmit="return chk_form(this);" 
+action=http://g.51cto.com/group_index.php?do=bbsart method=post>
+<TABLE cellSpacing=1 cellPadding=0 width=978 align=center bgColor=#c2c2c2 
+border=0>
+  <TBODY>
+  <TR>
+    <TD bgColor=#ffffff>
+      <TABLE cellSpacing=1 cellPadding=0 width=976 border=0>
+        <TBODY>
+        <TR>
+          <TD class=font9 style="PADDING-LEFT: 15px" vAlign=bottom 
+          bgColor=#f5f5f5 height=28>回复本贴</TD></TR>
+        <TR>
+          <TD bgColor=#ffffff height=26>
+            <TABLE cellSpacing=1 cellPadding=1 width=946 align=center 
+              border=1><TBODY>
+              <TR>
+                <TD width=171 height=36>
+                  <DIV align=right>标题:&nbsp;</DIV></TD>
+                <TD width=762><LABEL><INPUT size=35 
+                  value="RE：Packet Tracer 5.0建构CCNA实验攻略" name=huifutitle> 
+                  </LABEL><INPUT type=hidden value=2 name=job><INPUT type=hidden 
+                  value=skwl name=gname><INPUT type=hidden value=reply 
+                  name=actionsp><INPUT type=hidden name=quotep><INPUT 
+                  type=hidden value=1219 name=gid><INPUT type=hidden value=34224 
+                  name=sid> </TD></TR>
+              <TR>
+                <TD height=32>
+                  <DIV align=right>内容:&nbsp;</DIV></TD>
+                <TD style="TEXT-ALIGN: left" align=left><INPUT type=hidden 
+                  name=atc_contentp>
+                  <SCRIPT 
+                  src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/KindEditor3.js" 
+                  type=text/javascript></SCRIPT>
+
+                  <SCRIPT>
+var editor = new KindEditor("editor","");
+editor.hiddenName = "atc_contentp";
+editor.editorType = "SIMPLE";
+editor.editorWidth = "800px";
+editor.editorHeight = "360px";
+editor.groupid = "";
+editor.show();
+</SCRIPT>
+                   </TD></TR>
+              <TR>
+                <TD colSpan=2 height=35>
+                  <DIV align=center><LABEL>&nbsp; <INPUT type=submit value=提交 name=Submit> <INPUT type=reset value=重置 name=重置> 
+              </LABEL></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM>
+<SCRIPT>
+cbt=0
+function KindSubmit(TheForm){
+	TheForm.atc_contentp.value = editor.data();
+}
+function trim(str){  //删除左右两端的空格
+ return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+function checkchrforbid(str){
+	var a='fff88.com,inmassage.net,54bao.com/,sysy114.com/,gupiaopingtai.com,arfhulanwang.com,深圳市鑫益盛塑胶制品有限公司,rj6888.com,292123.com/,gshou.com,所立得博客营销,tao33.com,抚顺白癜风医院,广州泰琏贸易发展有限公司,dgoow.com,阴虱,jiagouyan99.com/,31755.com,上门按摩,广州亿品康医药,武汉维尼雅生物科技有限公司,广州莱茵生物科技有限公司,flcpw999.com,cncbox.cn,.bjnzyy.com,无痛人流,宫颈糜烂,xf114la.com/,xichenqi.tk,1170979382,武汉创世远扬生物科技有限公司,jnntgm.com/,15079272847,丰胸秘籍,上海轿车托运公司,shjcty.com,广州鑫威电脑技术服务中心,0512man.cn,man.szdwyy.com,上海宠物托运,太阳城娱乐网,输卵管炎,皇冠改单足球投注系统,六合彩改单投注平台,东莞市联运电子科技有限公司,www.jobaaa.com,hz32.com,44788.com ,圣拉格地板,上海婚纱摄影,zdzw.com,xinfajs.com,东莞市鑫发金属材料有限公司,oyeah365.com/groupon/,武汉兼职美女,新会罗坑高空车租赁,shhuojia8.com,上海货架公司 ,肤达尼疤痕网,bcacb.com,133818.cn,东莞同道打火机,xiangce.seofh.com,rggbbs.com,武汉唯美健医药生物科技有限公司,健尔马足疗机,欧典思家地板,seo058.com,远红外桑拿房,zhaiye.com,广州博雅生物科技有限公司,南京丝足按摩,武汉星空乐视工程公司,上海华宇物流公司,chayihua.com/blog,上海德邦物流公司,91kaihu.com,上海股票开户,上海天天物流公司,深圳市捷顺兴实业有限公司,武汉市兴宏凯电子科技有限责任公司,快餐店装修设计,中国园林资源网,86garden.com,seofafa.com,021banzheng.net,ylnic.com,滇正继续教育中心,917r.info,169100.com,三亚婚纱摄影,左旋肉碱品牌排行榜,bxjp.net/sc,chunge.org.cn,整形美容医院,018018.cn,0451dx.com,上海卷帘门厂,95280.net,ra66.in,livebet008.com,天津精密无缝钢,ra686.in ,cr658.com,gzhl18.com,太阳城代理开户,zerrn.com ,ra6888.cn,ccrr11.us,bet383.com ,whwmt.com,au8866.com,rj2888.com,wny88.com,jsx9888.com,WWW.oaingd.inf,康辉实木地板,瑞士NE丰胸茶,gzby888.com,hanchun88.com,皇冠赌球网,jz3158.com,太阳城代理,东莞辰宇网站优化,武汉威美特医药生物科技有限公司,ra666.tv ,ra89.in ,武汉市威美特医药生物科技有限公司,8zqw.com,北海健康网,高速离心机,上海隔热膜公司,皇冠开户,东方时尚驾校团购,开平人才网,深圳液晶电视维修,北京白癜风,xys88.com,lsiruj.com,PCB抄板,深圳会计培训,左旋肉碱的效果 ,wrywnh.inf,kx9988.com ,开平招聘网,开平人才网,深圳婚庆公司,杭州婚纱摄影,周公解梦官网,whyt88.com,衢州竹炭公司,东莞市浩正实业有限公司,xag3.com,666pc.com,tvflv.com,tzdb8.com,viagramall.net,yl18613.com,wd8888.com,fedwww.com,广州科鑫生物技术有限公司,阴茎增大,万艾可,广州市云新清洁公司,gzzbd28.com,深圳市世纪芯集成电路有限公司';
+	//var a="法轮,你好";
+	aa = a.split(',');
+	for(var i=0;i<aa.length;i++){
+		var judge = str.indexOf(aa[i]);
+		if(judge>=0){
+			return false;
+		}
+	}
+	return true;
+}
+function chk_form(TheForm){
+      KindSubmit(TheForm);
+
+     if(trim(TheForm.huifutitle.value).length<4){
+	   alert("帖子标题不能少于4个字符!");
+	   TheForm.huifutitle.focus();
+	   return false;
+	 }
+	 if(!checkchrforbid(TheForm.huifutitle.value)){
+		alert('您输入的标题包含禁止的词语,请您重新编辑后再提交');
+		return false;
+	}
+	 if(TheForm.huifutitle.value.length>120){
+	   alert("帖子标题不能超过120个字符!");
+	   TheForm.huifutitle.focus();
+	   return false;
+	}
+	 if(TheForm.atc_contentp.value==""){
+	   alert("帖子内容不能为空!");
+
+	   return false;
+	 }
+	 if(!checkchrforbid(TheForm.atc_contentp.value)){
+		alert('您输入的内容包含禁止的词语,请您重新编辑后再提交');
+		return false;
+	}
+	cbt++;
+	if(cbt!=1)
+	{
+	return false;
+	}
+	 return true;
+ }
+
+function thissubmit(){
+   var bgObj;
+   var title;
+   var msgObj;
+  bgObj=document.getElementById("bgDiv");
+  msgObj=document.getElementById("msgDiv");
+  title=document.getElementById("msgTitle");
+  document.body.removeChild(bgObj);
+		document.getElementById("msgDiv").removeChild(title);
+		document.body.removeChild(msgObj);
+}
+
+</SCRIPT>
+</DIV></DIV>
+<DIV class=clear></DIV></DIV>
+<DIV id=footer>
+<DIV id=innerFooter>
+<CENTER>Copyright &copy; <A href="http://blog.51cto.com/" 
+target=_blank><B>51CTO.COM</B></A> All Rights Reserved</CENTER></DIV></DIV>
+<SCRIPT src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/index.htm" 
+charset=utf-8></SCRIPT>
+
+<DIV style="DISPLAY: none">
+<SCRIPT 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/gcount.htm"></SCRIPT>
+
+<SCRIPT 
+src="Packet Tracer 5_0建构CCNA实验攻略 - 思科网络 - 51cto技术圈.files/count.js"></SCRIPT>
+</DIV></DIV></BODY></HTML>
